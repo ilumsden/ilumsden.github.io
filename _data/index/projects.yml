@@ -1,22 +1,28 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Jalpc
+- name: McVineGPU
   i18n: jalpc
-  gh_user: jarrekk
-  repo: Jalpc
-  img: /static/assets/img/landing/jekyll.png
-  desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
+  gh_user: mcvine
+  repo: McVineGPU
+  img: /static/assets/img/landing/McVine.png
+  desc: McVineGPU is a GPU-powered version of MCViNE, a ray-tracing neutron scattering experiment simulation software.
 
-- name: Python
+- name: Robotics Integrated Platform
   i18n: cpython
-  gh_user: python
-  repo: cpython
-  img: /static/assets/img/landing/python.png
-  desc: This project is other's project. I use another request to get repo's information.
+  url: https://gitlab.com/utk-robotics
+  img: /static/assets/img/landing/IEEERobotics.png
+  desc: The Robotics Integrated Platform (RIP) is a modular software platform written in C++ for controlling small-scale fully-autonomous robots controlled by a Raspberry Pi and Arduinos.
 
-- name: Google
-  i18n: google
-  url: https://google.com
-  img: /static/assets/img/landing/google.png
-  desc: This is another project.
+  # - name: SCADGen
+  # i18n: google
+  # gh_user: mcvine
+  # repo: SCADGen
+  # img: /static/assets/img/landing/McVine.png
+  # desc: SCADGen is a tool for converting XMLs used by MCViNE to represent constructive solid geometry into OpenSCAD code for visualization and STL generation purposes.
+
+- name: Minsky Link
+  gh_user: utk-cs
+  repo: team-Minsky
+  img: /static/assets/img/landing/Atom.png
+  desc: Minsky Link is an Atom plugin to integrate GitHub and GitLab issues and pull/merge request inline with your code.
