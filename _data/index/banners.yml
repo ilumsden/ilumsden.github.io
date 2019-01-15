@@ -2,8 +2,10 @@
 # Add items for each banner image in the carousel
 #
 # Images are expected to be located in `static/assets/img/`.
-- src: landing/header_one.jpg
-  title: first banner image
+# - src: landing/NicaraguaSunsetResized.jpg
+#   title: A picture I took of a bird at sunset in Nicaragua
+- src: landing/LittleDoverBoardwalkResized.jpg
+  title: Nova Scotian seascape taken from the boardwalk in Little Dover
 
-- src: landing/header_two.jpg
-  title: second banner image
+- src: landing/2018RoboticsTeamPhotoResized.jpg
+  title: UT's IEEE Robotics team at competition at SoutheastCon 2018 (I'm on right)
