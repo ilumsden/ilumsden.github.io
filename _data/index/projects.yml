@@ -8,21 +8,25 @@
   img: /static/assets/img/landing/McVine.png
   desc: McVineGPU is a GPU-powered version of MCViNE, a ray-tracing neutron scattering experiment simulation software.
 
+- name: SCADGen
+  i18n: google
+  gh_user: mcvine
+  repo: SCADGen
+  img: /static/assets/img/landing/McVine.png
+  desc: SCADGen is a tool for converting XMLs used by MCViNE to represent constructive solid geometry into OpenSCAD code for visualization and STL generation purposes.
+
 - name: Robotics Integrated Platform
   i18n: cpython
   url: https://gitlab.com/utk-robotics
   img: /static/assets/img/landing/IEEERobotics.png
   desc: The Robotics Integrated Platform (RIP) is a modular software platform written in C++ for controlling small-scale fully-autonomous robots controlled by a Raspberry Pi and Arduinos.
 
-  # - name: SCADGen
-  # i18n: google
-  # gh_user: mcvine
-  # repo: SCADGen
-  # img: /static/assets/img/landing/McVine.png
-  # desc: SCADGen is a tool for converting XMLs used by MCViNE to represent constructive solid geometry into OpenSCAD code for visualization and STL generation purposes.
-
 - name: Minsky Link
-  gh_user: utk-cs
-  repo: team-Minsky
+  url: https://github.com/utk-cs/team-minsky
   img: /static/assets/img/landing/Atom.png
   desc: Minsky Link is an Atom plugin to integrate GitHub and GitLab issues and pull/merge request inline with your code.
+
+- name: Analytics for Molecular Dynamics
+  url: https://analytics4md.org/
+  img: /static/assets/img/landing/a4md.png
+  desc: A4MD is a project for developing in-situ and in-transit data analytics solutions for current- and next-generation molecular dynamics workflows.

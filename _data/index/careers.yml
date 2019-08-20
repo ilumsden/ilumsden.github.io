@@ -13,3 +13,17 @@
     detail: HERE Intern
     i18n: company_a_job
   icon: fa-server
+
+- name:
+    detail: Global Computing Laboratory at the University of Tennessee, Knoxville
+    i18n: company_a
+  desc:
+    detail: Working on the Analytics for Molecular Dynamics (A4MD) project, which examines the performance and implications of in-situ and in-transit analysis of molecular dynamics simulations.
+    i18n: company_a_desc
+  date:
+    detail: May 2019 - Present
+    i18n: company_a_date
+  job:
+    detail: Undergraduate Researcher
+    i18n: company_a_job
+  icon: fa-server

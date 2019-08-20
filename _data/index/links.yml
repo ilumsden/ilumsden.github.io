@@ -1,10 +1,13 @@
 # links section data
+- last_name: Global Computing Lab
+  website: https://globalcomputing.group/
+  github: https://github.com/TauferLab
+
 - last_name: Contact
   first_name: Me
   website: https://github.com/ilumsden
   email: lumsden.ian@gmail.com
 
 - last_name: UTK IEEE Robotics
-  first_name: GitLab
-  desc: 
-  website: https://gitlab.com/utk-robotics
+  gitlab: https://gitlab.com/utk-robotics
+  website: https://ieee.eecs.utk.edu/
