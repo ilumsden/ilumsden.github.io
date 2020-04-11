@@ -12,7 +12,7 @@
   job:
     detail: HERE Intern
     i18n: company_a_job
-  icon: fa-server
+  icon: fa fa-server
 
 - name:
     detail: Global Computing Laboratory at the University of Tennessee, Knoxville
@@ -26,4 +26,18 @@
   job:
     detail: Undergraduate Researcher
     i18n: company_a_job
-  icon: fa-server
+  icon: fa fa-server
+
+- name:
+    detail: Lawrence Livermore National Laboratory
+    i18n: company_a
+  desc:
+    detail: Will be working on the Hatchet tool, which allows users to analyze parallel program runtime profiles produced by standard High-Performance Computing profiling tools using a mix of traditional data analysis tools (i.e. Python's Pandas library) and graph- and tree-based functions.
+    i18n: company_a_desc
+  date:
+    detail: May 2020 - August 2020
+    i18n: company_a_date
+  job:
+    detail: Summer Computing Student Intern
+    i18n: company_a_job
+  icon: fa fa-table

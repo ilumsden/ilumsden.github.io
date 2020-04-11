@@ -8,15 +8,10 @@
     <div class="row">
         {% for project in site.data.index.projects %}
             {% assign loopindex = forloop.index | modulo: 2 %}
-            {% if forloop.last %}
-                {% if forloop.last == forloop.first %}
-            <div class="col-sm-6 wow col-sm-offset-3 zoomIn">
-                {% else %}
-            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft col-sm-offset-3 {% else %} fadeInRight {% endif %}" style="padding: 0px;">
-                {% endif %}
-            {% else %}
-            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}" style="padding: 0px;">
+            {% if loopindex == 1 %}
+            <div class="row">
             {% endif %}
+            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}" style="padding-left: 0px; padding-right:0px;">
               <div class="team-member">
                   <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
                   <h4>
@@ -38,6 +33,9 @@
                   {% endif %}
               </div>
           </div>
+          {% if loopindex != 1 %}
+            </div>
+          {% endif %}
       {% endfor %}
     </div>
 </div>
