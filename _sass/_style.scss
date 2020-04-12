@@ -2502,11 +2502,13 @@ body {
   .header-back {
     height: 470px;
     width: 100%;
+    position: absolute;
     background-position: 50% 0;
     background-repeat:  no-repeat;
   }
   .carousel {
     height: 470px;
+    width: 100%;
   }
   .carousel-caption {
     z-index: 10;

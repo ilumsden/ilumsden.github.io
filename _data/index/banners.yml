@@ -4,8 +4,18 @@
 # Images are expected to be located in `static/assets/img/`.
 # - src: landing/NicaraguaSunsetResized.jpg
 #   title: A picture I took of a bird at sunset in Nicaragua
-- src: landing/LittleDoverBoardwalkResized.jpg
-  title: Nova Scotian seascape taken from the boardwalk in Little Dover
-
 - src: landing/2018RoboticsTeamPhotoResized.jpg
   title: UT's IEEE Robotics team at competition at SoutheastCon 2018
+  extra_style: "background-size: cover;"
+
+- src: landing/gclab_group_photo_fall_2019_banner.png
+  title: Global Computing Lab at UTK
+  extra_style: "background-size: cover; background-position: 50% 10%;"
+
+- src: landing/sc19_student_volunteers_group_banner.png
+  title: Student Volunteers at SC19
+  extra_style: "background-size: cover; background-position: 50% 10%;"
+
+- src: landing/sc19_tech_prog_reception_banner.png
+  title: SC19 Technical Program Reception
+  extra_style: "background-size: cover; background-position: 50% 25%;"
