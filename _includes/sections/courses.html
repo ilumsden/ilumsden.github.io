@@ -1,0 +1,35 @@
+<div class="container" id="i18_career">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1><span data-i18n="career.my_career">My Courses</span></h1>
+        </div>
+    </div>
+    <div class="row features-block">
+        <div class="col-lg-12">
+            <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
+            {% assign counter = 1 %}
+            {% for semester in site.data.index.courses %}
+            {% assign loopindex = forloop.index | modulo: 2 %}
+                <div class="vertical-timeline-block">
+                    <div class="vertical-timeline-icon navy-bg wow rotateIn" style="font-size: 10; font-color: #fff; text-align: center; line-height: 2.25;">
+                        <!--<i class="{{ semester.icon }}"></i>-->
+                        {{ counter }}
+                        {% if semester.name.detail contains "Spring" %}
+                            {% assign counter = counter | plus: 1 %}
+                        {% endif %}
+                    </div>
+                    <div class="vertical-timeline-content-gray wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}" style="background-color: #f4f4f4;">
+                        <h2><span data-i18n="course.{{ semester.name.i18n }}">{{ semester.name.detail }}</span></h2>
+                        <ul>
+                        {% for course in semester.courses %}
+                        <li><span data-i18n="course.{{ course.i18n }}"><span class="course-label">{{ course.name }}&ensp;</span><span class="course-desc">{{ course.desc }}</span></span></li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

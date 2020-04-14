@@ -18,7 +18,7 @@
     detail: Global Computing Laboratory at the University of Tennessee, Knoxville
     i18n: company_a
   desc:
-    detail: Working on the Analytics for Molecular Dynamics (A4MD) project, which examines the performance and implications of in-situ and in-transit analysis of molecular dynamics simulations.
+    detail: Working on the Analytics for Molecular Dynamics (A4MD) project, which examines the performance and implications of in-situ and in-transit analysis of molecular dynamics simulations. Also working on the new A4X project, which is a spin-off of A4MD that I came up with that seeks to generalize and expand the A4MD workflow into a general purpose workflow engine.
     i18n: company_a_desc
   date:
     detail: May 2019 - Present

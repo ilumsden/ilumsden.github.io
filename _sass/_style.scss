@@ -1037,6 +1037,10 @@ label.error {
   float: right;
 }
 
+.vertical-timeline-content-gray .btn {
+  float: right;
+}
+
 #vertical-timeline.light-timeline:before {
   background: #e7eaec;
 }
@@ -1142,9 +1146,23 @@ label.error {
   }
 }
 
+.vertical-timeline-content-gray {
+  @extend .vertical-timeline-content;
+  background-color: #f4f4f4;
+}
+
 .vertical-date small {
   color: #3385FF;
   font-weight: 400;
+}
+
+.course-label {
+  color: #3385ff;
+  font-weight: 700;
+}
+
+.course-desc {
+  font-weight: 500;
 }
 
 .vertical-timeline-content::before {
@@ -1158,8 +1176,24 @@ label.error {
   border-right: 7px solid #fff;
 }
 
+.vertical-timeline-content-gray::before {
+  @extend .vertical-timeline-content::before;
+  background-color: #fff;
+  border-right: 7px solid #f4f4f4;
+}
+
 @media only screen and (min-width: 768px) {
   .vertical-timeline-content {
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .vertical-timeline-content-gray {
+  
     h2 {
       font-size: 18px;
     }
@@ -1176,6 +1210,7 @@ label.error {
       padding: 1.6em;
       width: 45%;
       &::before {
+        background-color: #f4f4f4;
         top: 24px;
         left: 100%;
         border-color: transparent transparent transparent #fff;
@@ -1184,7 +1219,27 @@ label.error {
         float: left;
       }
     }
+    .vertical-timeline-content-gray {
+      margin-left: 0;
+      padding: 1.6em;
+      width: 45%;
+      &::before {
+        background-color: #fff;
+        top: 24px;
+        left: 100%;
+        border-color: transparent transparent transparent #f4f4f4;
+      }
+      .btn {
+        float: left;
+      }
+    }
     .vertical-timeline-block:nth-child(even) .vertical-timeline-content {
+      float: right;
+      .btn {
+        float: right;
+      }
+    }
+    .vertical-timeline-block:nth-child(even) .vertical-timeline-content-gray {
       float: right;
       .btn {
         float: right;
@@ -1197,12 +1252,32 @@ label.error {
       top: 2px;
       font-size: 14px;
     }
+    .vertical-timeline-content-gray .vertical-date {
+      position: absolute;
+      width: 100%;
+      left: 122%;
+      top: 2px;
+      font-size: 14px;
+    }
     .vertical-timeline-block:nth-child(even) .vertical-timeline-content {
       &::before {
         top: 24px;
         left: auto;
         right: 100%;
         border-color: transparent #fff transparent transparent;
+      }
+      .vertical-date {
+        left: auto;
+        right: 122%;
+        text-align: right;
+      }
+    }
+    .vertical-timeline-block:nth-child(even) .vertical-timeline-content-gray {
+      &::before {
+        top: 24px;
+        left: auto;
+        right: 100%;
+        border-color: transparent #f4f4f4 transparent transparent;
       }
       .vertical-date {
         left: auto;

@@ -1,0 +1,150 @@
+- name:
+    detail: Fall 2016
+    i18n: fall_2016
+  courses:
+    - name: COSC 102
+      desc: Introduction to Computer Science
+      i18n: cosc_102
+    - name: EF 157
+      desc: Honors Physics for Engineers I
+      i18n: ef_157
+    - name: CHEM 128
+      desc: Honors General Chemistry I
+      i18n: chem_198
+    - name: ENGL 198
+      desc: Chancellor's Honors Writing I
+      i18n: engl_198
+- name:
+    detail: Spring 2017
+    i18n: spring_2017
+  courses:
+    - name: COSC 130
+      desc: Computer Organization
+      i18n: cosc_130
+    - name: EF 158
+      desc: Honors Physics for Engineers II
+      i18n: ef_158
+    - name: CHEM 138
+      desc: Honors General Chemistry II
+      i18n: chem_138
+    - name: PHYS 231
+      desc: "Fundamentals of Physics: Electricity and Magnetism"
+      i18n: phys_231
+    - name: ENGL 298
+      desc: Chancellor's Honors Writing II
+      i18n: engl_298
+    - name: MSE 101
+      desc: Advances in Materials Science and Engineering
+      i18n: mse_101
+- name:
+    detail: Fall 2017
+    i18n: fall_2017
+  courses:
+    - name: COSC 140
+      desc: Data Structures and Algorithms I
+      i18n: cosc_140
+    - name: ECE 201
+      desc: Circuits I
+      i18n: ece_201
+    - name: ECE 255
+      desc: Introduction to Logic Design of Digital Systems
+      i18n: ece_255
+    - name: MSE 207
+      desc: Honors Introduction to Materials Science and Engineering
+      i18n: mse_207
+    - name: ITAL 111
+      desc: Elementary Italian
+      i18n: ital_111
+- name:
+    detail: Spring 2018
+    i18n: spring_2018
+  courses:
+    - name: COSC 307
+      desc: Honors Data Structures and Algorithms II
+      i18n: cosc_307
+    - name: COSC 311
+      desc: Discrete Structures
+      i18n: cosc_311
+    - name: ECE 313
+      desc: Probability and Random Variables
+      i18n: ece_313
+    - name: MSE 350
+      desc: Principles of Electronic, Optical, and Magnetic Materials
+      i18n: mse_350
+    - name: SOCI 232
+      desc: Religions in Global Perspective
+      i18n: soci_232
+- name:
+    detail: Summer 2018
+    i18n: summer_2018
+  courses:
+    - name: COSC 377
+      desc: Honors Introduction to Scientific Computing
+      i18n: cosc_377
+- name:
+    detail: Fall 2018
+    i18n: fall_2018
+  courses:
+    - name: COSC 340
+      desc: Software Engineering
+      i18n: cosc_340
+    - name: COSC 360
+      desc: Systems Programming
+      i18n: cosc_360
+    - name: COSC 312
+      desc: Algorithm Analysis and Automata
+      i18n: cosc_312
+    - name: COSC 528
+      desc: Introduction to Machine Learning (Graduate Version)
+      i18n: cosc_528
+- name:
+    detail: Spring 2019
+    i18n: spring_2019
+  courses:
+    - name: COSC 466
+      desc: Software Security (formerly called Web Security)
+      i18n: cosc_466
+    - name: COSC 556
+      desc: Computer Graphics (Graduate Version, was COSC 594 when I took it)
+      i18n: cosc_594
+    - name: COSC 365
+      desc: Programming Languages and Systems
+      i18n: cosc_365
+    - name: COSC 361
+      desc: Operating Systems
+      i18n: cosc_361
+- name:
+    detail: Fall 2019
+    i18n: fall_2019
+  courses:
+    - name: COSC 461
+      desc: Compilers
+      i18n: cosc_461
+    - name: COSC 462
+      desc: Parallel Programming
+      i18n: cosc_462
+    - name: COSC 401
+      desc: Senior Design Theory
+      i18n: cosc_401
+    - name: ENGL 360
+      desc: Technical and Professional Writing
+      i18n: engl_360
+    - name: PHIL 107
+      desc: Honors Introduction to Philosophy
+      i18n: phil_107
+- name:
+    detail: Spring 2020
+    i18n: spring_2020
+  courses:
+    - name: COSC 526
+      desc: Data Mining
+      i18n: cosc_526
+    - name: COSC 493
+      desc: Independent Study
+      i18n: cosc_493
+    - name: COSC 402
+      desc: Senior Design Practicum
+      i18n: cosc_402
+    - name: REST 225
+      desc: Introduction to Judaism, Christianity, and Islam
+      i18n: rest_225
