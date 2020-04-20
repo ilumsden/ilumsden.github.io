@@ -30,9 +30,6 @@
 - name: Study Abroad
   href: /study abroad/
 
-- name: Academics
-  href: /academics/
-
 # Don't display donation page: change donation to off at file '_config.yml'
 - name: Donate
   href: /donate/
