@@ -1,0 +1,197 @@
+section:
+  name: Publications
+  id: publications
+  enable: true
+  weight: 6
+  showOnNavbar: true
+
+buttons:
+  - name: All
+    filter: "all"
+  - name: Performance Analysis
+    filter: "perf_analysis"
+  - name: Physics
+    filter: "physics"
+  - name: Math
+    filter: "math"
+
+publications:
+  - title: Enabling Call Path Querying in Hatchet to Identify Performance Bottlenecks in Scientific Applications
+    publishedIn:
+      name: 2022 IEEE 18th International Conference on eScience (eScience)
+      date: 10-14 October 2022
+      url: https://www.escience-conference.org/2022/
+    authors:
+      - name: Ian Lumsden
+        url: https://ilumsden.github.io/
+      - name: Jakob Luettgau
+      - name: Vanessa Lama
+        url: https://www.linkedin.com/in/vanessa-lama-10364216a/
+      - name: Connor Scully-Allison
+        url: https://www.sci.utah.edu/people/cscullyallison.html
+      - name: Stephanie Brink
+        url: https://www.linkedin.com/in/stephanielbrink/
+      - name: Katherine E. Isaacs
+        url: https://www.sci.utah.edu/people/kisaacs.html
+      - name: Olga Pearce
+        url: https://www.linkedin.com/in/olgapearce/
+      - name: Michela Taufer
+        url: https://globalcomputing.group/about.html
+    paper:
+      summary: >
+        As computational science applications benefit from larger-scale, more heterogeneous
+        high performance computing (HPC) systems, the process of studying their performance
+        becomes increasingly complex. The performance data analysis library Hatchet provides
+        some insights into this complexity, but is currently limited in its analysis capabilities.
+        Missing capabilities include the handling of relational caller-callee data captured by HPC profilers.
+        To address this shortcoming, we augment Hatchet with a Call Path Query Language that
+        leverages relational data in the performance analysis of scientific applications.
+        Specifically, our Query Language enables data reduction using call path pattern matching.
+        We demonstrate the effectiveness of our Query Language in identifying performance bottlenecks
+        and enhancing Hatchet’s analysis capabilities through three case studies.
+        In the first case study, we compare the performance of sequential and multi-threaded versions
+        of the graph alignment application Fido. In doing so, we identify the existence of large memory
+        inefficiencies in both versions. In the second case study, we examine the performance of MPI calls
+        in the linear algebra mini-application AMG2013 when using MVAPICH and Spectrum-MPI.
+        In doing so, we identify hidden performance losses in specific MPI functions.
+        In the third case study, we illustrate the use of our Query Language in Hatchet's interactive visualization.
+        In doing so, we show that our Query Language enables a simple and intuitive way to massively reduce profiling data.
+      # url: Add DOI Link here
+    categories: ["perf_analysis"]
+    tags: ["Performance Analysis"]
+  - title: Usability and Performance Improvements in Hatchet
+    publishedIn:
+      name: >
+        2020 IEEE/ACM International Workshop on HPC User Support Tools (HUST)
+        and Workshop on Programming and Performance Visualization Tools (ProTools)
+      date: 18 November 2020
+      url: https://protools20.github.io/
+    authors:
+      - name: Stephanie Brink
+        url: https://www.linkedin.com/in/stephanielbrink/
+      - name: Ian Lumsden
+        url: https://ilumsden.github.io/
+      - name: Connor Scully-Allison
+        url: https://www.sci.utah.edu/people/cscullyallison.html
+      - name: Katy Williams
+        url: https://www.cs.arizona.edu/person/katy-williams
+      - name: Olga Pearce
+        url: https://www.linkedin.com/in/olgapearce/
+      - name: Todd Gamblin
+        url: https://www.linkedin.com/in/tgamblin/
+      - name: Michela Taufer
+        url: https://globalcomputing.group/about.html
+      - name: Katherine E. Isaacs
+        url: https://www.sci.utah.edu/people/kisaacs.html
+      - name: Abhinav Bhatele
+        url: https://www.cs.umd.edu/~bhatele/
+    paper:
+      summary: >
+        Performance analysis is critical for pinpointing bottlenecks in parallel applications.
+        Several profilers exist to instrument parallel programs on HPC systems and gather performance data.
+        Hatchet is an open-source Python library that can read profiling output of several tools, and enables
+        the user to perform a variety of programmatic analyses on hierarchical performance profiles.
+        In this paper, we augment Hatchet to support new features: a query language for representing call path patterns
+        that can be used to filter a calling context tree, visualization support for displaying
+        and interacting with performance profiles, and new operations for performing analyses on multiple datasets.
+        Additionally, we present performance optimizations in Hatchet’s HPCToolkit reader and the unify operation
+        to enable scalable analysis of large datasets.
+      url: https://doi.org/10.1109/HUSTProtools51951.2020.00013
+    categories: ["performance_analysis"]
+    tags: ["Performance Analysis"]
+  - title: Neutron Imaging Analysis using Jupyter Python Notebook
+    publishedIn:
+      name: Journal of Physics Communications
+      date: 30 August 2019
+      url: https://iopscience.iop.org/journal/2399-6528/
+    authors:
+      - name: Jean-Christophe Bilheux
+        url: https://www.linkedin.com/in/jean-christophe-bilheux-6ba26686/
+      - name: Hassina Bilheux
+        url: https://www.linkedin.com/in/hassina-bilheux-a9156a120/
+      - name: Jiao Lin
+        url: https://www.linkedin.com/in/jiao-lin-20a9073/
+      - name: Ian Lumsden
+        url: https://ilumsden.github.io/
+      - name: Yuxuan Zhang
+        url: https://www.linkedin.com/in/zhangy6x/
+    paper:
+      summary: >
+        Independently of the image modality (x-rays, neutrons, etc), image data analysis requires normalization,
+        a preprocessing step. While the normalization can sometimes easily be generalized, the analysis is,
+        in most cases, specific to an experiment and a sample. Although many tools (MATLAB, ImageJ, VG Studio...)
+        offer a large collection of pre-programmed image analysis tools, they usually require a learning step
+        that can be lengthy depending on the skills of the end user. We have implemented Jupyter Python notebooks
+        to allow easy and straightforward data analysis, along with live interaction with the data.
+        Jupyter notebooks require little programming knowledge and the steep learning curve is bypassed.
+        Most importantly, each notebook can be tailored to a specific experiment and sample with minimized effort.
+        Here, we present the pros and cons of the main methods to analyse data and show the reason why
+        we have found that Jupyter Python notebooks are well suited for imaging data processing, visualization and analysis.
+      url: https://doi.org/10.1088/2399-6528/ab3bea
+    categories: ["physics"]
+    tags: ["Physics", "Neutron Physics"]
+  - title: Recent Developments of MCViNE and its Applications at SNS
+    publishedIn:
+      name: Journal of Physics Communications
+      date: 12 August 2019
+      url: https://iopscience.iop.org/journal/2399-6528
+    authors:
+      - name: Jiao Lin
+        url: https://www.linkedin.com/in/jiao-lin-20a9073/
+      - name: Fahima Islam
+        url: https://www.linkedin.com/in/fahima-islam-aaa4b95b/
+      - name: Gabriele Sala
+        url: https://www.ornl.gov/staff-profile/gabriele-sala
+      - name: Ian Lumsden
+        url: https://ilumsden.github.io/
+      - name: Hillary Smith
+        url: https://hillarylsmith.com/
+      - name: Mathieu Doucet
+        url: https://www.linkedin.com/in/mdoucet/
+      - name: Matthew B Stone
+        url: https://www.linkedin.com/in/matthew-stone-481b8035/
+      - name: Douglas L Abernathy
+        url: https://www.ornl.gov/staff-profile/douglas-l-abernathy
+      - name: Georg Ehlers
+        url: https://www.ornl.gov/staff-profile/georg-ehlers
+      - name: John F Ankner
+        url: https://www.ornl.gov/staff-profile/john-f-ankner
+      - name: Garrett E Granroth
+        url: https://www.linkedin.com/in/garrett-granroth-37329698/
+    paper:
+      summary: >
+        MCViNE is an open source, object-oriented Monte Carlo neutron ray-tracing simulation software package.
+        Its design allows for flexible, hierarchical representations of sophisticated instrument components
+        such as detector systems, and samples with a variety of shapes and scattering kernels. Recently this
+        flexible design has enabled several applications of MCViNE simulations at the Spallation Neutron Source (SNS)
+        at Oak Ridge National Lab, including assisting design of neutron instruments at the second target station
+        and design of novel sample environments, as well as studying effects of instrument resolution
+        and multiple scattering. Here we provide an overview of the recent developments and new features of MCViNE
+        since its initial introduction (Jiao et al 2016 Nucl. Instrum. Methods Phys. Res.,
+        Sect. A 810, 86–99), and some example applications.
+      url: https://doi.org/10.1088/2399-6528/ab3622
+    categories: ["physics"]
+    tags: ["Physics", "Neutron Physics"]
+  - title: >
+      Grid-Based Volume Integration for Elasticity: Traction Boundary Integral Equation
+    publishedIn:
+      name: Engineering Fracture Mechanics
+      date: 1 May 2017
+      url: https://www.sciencedirect.com/journal/engineering-fracture-mechanics/vol/176/suppl/C
+    authors:
+      - name: Ian Lumsden
+        url: https://ilumsden.github.io/
+      - name: L.J. Gray
+      - name: Wenjing Ye
+    paper:
+      summary: >
+        A volume integral algorithm for the non-homogeneous elasticity traction boundary integral equation is presented.
+        The body force volume integral is exactly split into a relatively simple boundary integral,
+        together with a remainder volume integral that can be evaluated using a regular grid of cuboid cells
+        covering the problem domain. Of particular importance for (inelastic) fracture analysis is that
+        the volume integral over the regular grid is computed without explicit knowledge of the domain boundary,
+        including the fracture surface. A Galerkin approximation is employed, and the numerical implementation is
+        validated by solving body force elasticity problems with known solutions.
+      url: https://doi.org/10.1016/j.engfracmech.2017.02.009
+    categories: ["math"]
+    tags: ["Math"]

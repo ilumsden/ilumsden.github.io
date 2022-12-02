@@ -1,0 +1,68 @@
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 3
+  showOnNavbar: true
+
+skills:
+  - name: Git
+    logo: /images/sections/skills/git_logo.png
+    summary: >
+      I am very experienced with git-based software development.
+      I mostly use GitHub, but I am also quite experienced
+      with GitLab too.
+    url: "https://git-scm.com/"
+  - name: C/C++
+    logo: /images/sections/skills/cpp_logo.png
+    summary: >
+      I am very experienced with C and C++. For everything except
+      data analysis, they are my primary programming languages for
+      professional development.
+    url: "https://isocpp.org/"
+  - name: Python
+    logo: /images/sections/skills/python_logo.png
+    summary: >
+      I am very experienced with Python. I use it regularly in
+      my research for both tool development and developing scripts
+      to help me run other codes.
+    url: "https://www.python.org/"
+  - name: Python Data Analysis Tools
+    logo: /images/sections/skills/pydata_logo.jpeg
+    summary: >
+      I am very experienced with a variety of widely used
+      Python data analysis tools, including NumPy, SciPy,
+      Matplotlib, pandas, and Jupyter.
+  - name: Rust
+    logo: /images/sections/skills/ferris_rust_logo.png
+    summary: >
+      Rust is my favorite programming language. Currently, I have
+      only used it for school work and personal programming projects,
+      but I am very interested in using it for professional projects too.
+    url: "https://www.rust-lang.org/"
+  - name: Shell Scripting
+    logo: /images/sections/skills/bash_logo.jpg
+    summary: >
+      I am experienced in writing shell scripts, although I prefer to
+      use Python when possible. Most of my experience is with Bash,
+      but I also have experience with Bourne shell and zsh.
+  - name: Flux
+    logo: /images/sections/skills/flux_logo.png
+    summary: >
+      I am familiar with and quickly learning more about the Flux
+      resource manager and HPC scheduler from Lawrence Livermore
+      National Laboratory (LLNL). I am currently using Flux in my current
+      research project in collaboration with LLNL.
+    url: "https://flux-framework.readthedocs.io/en/latest/"
+  - name: CMake
+    logo: /images/sections/skills/cmake_logo.png
+    summary: >
+      I am very experienced with CMake. It is my build system of
+      choice when dealing with C and C++ code.
+    url: "https://cmake.org/"
+  - name: Autotools
+    logo: /images/sections/skills/gnu_logo.png
+    summary: >
+      I am familiar with the Autotools. I have been learning them
+      as part of my current research project in collaboration with LLNL.
+    url: "https://www.gnu.org/manual/#Software"
