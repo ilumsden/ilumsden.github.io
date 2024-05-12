@@ -28,6 +28,19 @@ experiences:
       # url:
       location: Livermore, CA
     positions:
+      - designation: Graduate Computing Summer Intern
+        start: May 2023
+        end: Aug 2023
+        responsibilities:
+          - >
+            Developed an approach to automatically detect all accessible levels of the
+            storage hierarchy and model it as a bipartite graph
+          - >
+            Integrated this approach into LLNL’s Dynamic and Asynchronous Data
+            Streamliner (DYAD)
+          - >
+            Improved the structure and performance of DYAD and the test suite developed
+            during the previous summer
       - designation: Graduate Computing Student Intern
         start: May 2022
         end: Aug 2022

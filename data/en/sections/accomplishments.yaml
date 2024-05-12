@@ -7,6 +7,29 @@ section:
 
 accomplishments:
   - name: Lead Student Volunteer
+    timeline: "March 2024 - November 2024"
+    organization:
+      name: >
+        2024 ACM/IEEE International Conference for High
+        Performance Computing, Networking, Storage, and Analysis (SC)
+      url: https://sc24.supercomputing.org/
+    courseOverview: >
+      Serving as a Lead Student Volunteer at SC24. Prior to the conference,
+      I am working with the Posters Committee to help organize the Posters
+      track of the conference.
+  - name: Student Volunteer
+    timeline: "November 2023"
+    organization:
+      name: >
+        2023 ACM/IEEE International Conference for High
+        Performance Computing, Networking, Storage, and Analysis (SC)
+      url: https://sc23.supercomputing.org/
+    courseOverview: >
+      Served as a Student Volunteer at SC23. In this role, I helped
+      ensure the sessions of the conference ran smoothly. Additionally,
+      I performed other miscellaneous tasks, such as keeping track of the number
+      of attendees in the sessions at which I was working.
+  - name: Lead Student Volunteer
     timeline: "March 2022 - November 2022"
     organization:
       name: >

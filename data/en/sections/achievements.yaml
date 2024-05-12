@@ -13,12 +13,22 @@ achievements:
       Won 1st place in the Undergraduate category of the ACM Student Research Competition
       at SC20 for my work on developing a query language for performance profiles for LLNL's
       Hatchet tool
+  - title: Participant in the ACM Student Research Competition at SC23
+    image: /images/sections/achievements/sc23_acm_src.png
+    summary: >
+      Presented my work on the DYnamic and Asynchronous Data Streamliner (DYAD) at the
+      ACM Student Research Competition at SC23
   - title: NSF Travel Scholarship
     image: /images/sections/achievements/escience2022_ql_presentation.jpg
     summary: >
       Awarded a travel scholarship by NSF to attend the 2022 eScience Conference
       and present my paper on developing a query language for performance profiles
       for LLNL's Hatchet tool
+  - title: ACM Travel Grant
+    image: /images/sections/achievements/sc23_logo.png
+    summary: >
+      Awarded a travel grant by ACM to attend SC23 and participate in the ACM
+      Student Research Competition
   - title: Tennessee Fellowship for Graduate Excellence
     image: /images/sections/achievements/sc22_lab_photo_used_for_fellowship.jpg
     summary: >

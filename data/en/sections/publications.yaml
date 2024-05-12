@@ -8,6 +8,10 @@ section:
 buttons:
   - name: All
     filter: "all"
+  - name: I/O
+    filter: "io"
+  - name: Workflows
+    filter: "workflows"
   - name: Performance Analysis
     filter: "perf_analysis"
   - name: Physics
@@ -16,6 +20,90 @@ buttons:
     filter: "math"
 
 publications:
+  - title: "Thicket: Seeing the Performance Experiment Forest for the Individual Run Trees"
+    publishedIn:
+      name: 32nd International Symposium on High-Performance Parallel and Distributed Computing
+      date: 20-23 June 2023
+      url: https://www.hpdc.org/2023/
+    authors:
+      - name: Stephanie Brink
+        url: https://www.linkedin.com/in/stephanielbrink/
+      - name: Michael McKinsey
+        url: https://www.linkedin.com/in/michaelmckinsey2000/
+      - name: David Boehme
+        url: https://people.llnl.gov/boehme3
+      - name: Connor Scully-Allison
+        url: https://www.sci.utah.edu/people/cscullyallison.html
+      - name: Ian Lumsden
+        url: https://ilumsden.github.io/
+      - name: Daryl Hawkins
+        url: ""
+      - name: Treece Burgess
+        url: https://www.linkedin.com/in/treece-burgess-9059301b4/
+      - name: Vanessa Lama
+        url: https://www.linkedin.com/in/vanessa-lama-10364216a/
+      - name: Jakob Luettgau
+        url: https://jakobluettgau.com/#/
+      - name: Katherine E. Isaacs
+        url: https://www.sci.utah.edu/people/kisaacs.html
+      - name: Michela Taufer
+        url: https://globalcomputing.group/about.html
+      - name: Olga Pearce
+        url: https://www.linkedin.com/in/olgapearce/
+    paper:
+      summary: >
+        Thicket is an open-source Python toolkit for Exploratory Data Analysis (EDA) of multi-run performance
+        experiments. It enables an understanding of optimal performance configuration for large-scale application
+        codes. Most performance tools focus on a single execution (e.g., single platform, single measurement tool,
+        single scale). Thicket bridges the gap to convenient analysis in multi-dimensional, multi-scale, multi-architecture,
+        and multi-tool performance datasets by providing an interface for interacting with the performance data.
+        Thicket has a modular structure composed of three components. The first component is a data structure
+        for multi-dimensional performance data, which is composed automatically on the portable basis of call trees,
+        and accommodates any subset of dimensions present in the dataset. The second is the metadata, enabling distinction
+        and sub-selection of dimensions in performance data. The third is a dimensionality reduction mechanism, enabling
+        analysis such as computing aggregated statistics on a given data dimension. Extensible mechanisms are available
+        for applying analyses (e.g., top-down on Intel CPUs), data science techniques (e.g., K-means clustering from
+        scikit-learn), modeling performance (e.g., Extra-P), and interactive visualization. We demonstrate the power
+        and flexibility of Thicket through two case studies, first with the open-source RAJA Performance Suite on CPU
+        and GPU clusters and another with a large physics simulation run on both a traditional HPC cluster and an AWS
+        Parallel Cluster instance.
+      url: https://doi.org/10.1145/3588195.3592989
+    categories: ["perf_analysis"]
+    tags: ["Performance Analysis"]
+  - title: "Ubique: A New Model for Untangling Inter-task Data Dependence in Complex HPC Workflows"
+    publishedIn:
+      name: 2022 IEEE 18th International Conference on eScience (eScience)
+      date: 10-14 October 2022
+      url: https://www.escience-conference.org/2022/
+    authors:
+      - name: Jae-Seung Yeom
+        url: https://people.llnl.gov/yeom2
+      - name: Dong Ahn
+        url: https://www.linkedin.com/in/dahn1/
+      - name: Ian Lumsden
+        url: https://ilumsden.github.io/
+      - name: Jakob Luettgau
+        url: https://jakobluettgau.com/#/
+      - name: Silvina Caino-Lores
+        url: https://scainolo.github.io/#/
+      - name: Michela Taufer
+        url: https://globalcomputing.group/about.html
+    paper:
+      summary: >
+        Exploiting task parallelism is getting increasingly difficult for diverse and complex
+        scientific workflows running on High Performance Computing (HPC) systems.
+        In this paper, we argue that the difficulty rises from a void in the spectrum of existing data-transfer
+        models for resolving inter-task data dependence within a workflow and propose a novel model to fill that gap: Ubique.
+        The Ubique model combines the best from in-transit and in situ models in order for loosely coupled producer
+        and consumer tasks to run concurrently and to resolve their data dependencies efficiently with little or no
+        modifications to their codes, striking a balance between transparent optimization, productivity, and performance.
+        Our preliminary evaluation suggests that Ubique can significantly outperform the parallel file system (PFS)-based
+        model while offering automatic data transfer and synchronization which are the features lacking in many traditional models.
+        It also identifies the performance characteristics of its key depending subsystems, which must be understood for further
+        broadening its benefits.
+      url: https://doi.org/10.1109/eScience55777.2022.00068
+    categories: ["io", "workflows"]
+    tags: ["I/O", "Workflows"]
   - title: Enabling Call Path Querying in Hatchet to Identify Performance Bottlenecks in Scientific Applications
     publishedIn:
       name: 2022 IEEE 18th International Conference on eScience (eScience)
@@ -56,7 +144,7 @@ publications:
         In doing so, we identify hidden performance losses in specific MPI functions.
         In the third case study, we illustrate the use of our Query Language in Hatchet's interactive visualization.
         In doing so, we show that our Query Language enables a simple and intuitive way to massively reduce profiling data.
-      # url: Add DOI Link here
+      url: https://doi.org/10.1109/eScience55777.2022.00039
     categories: ["perf_analysis"]
     tags: ["Performance Analysis"]
   - title: Usability and Performance Improvements in Hatchet

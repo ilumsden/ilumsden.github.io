@@ -30,6 +30,18 @@ projects:
       My work on DYAD includes examining its performance impact on workflows and improving
       DYAD's data movement using networking libraries like UCX.
     tags: ["gclab", "llnl"]
+  - name: Thicket 
+    logo: /images/sections/projects/thicket_logo.png
+    role: Developer and Researcher
+    timeline: "May 2022 - Present"
+    repo: https://github.com/LLNL/thicket
+    summary: >
+      Thicket is a Python-based toolkit for analyzing ensemble performance data. It is also built on
+      top of Hatchet, allowing for the same benefits that Hatchet provides.
+
+      My work on Thicket centers around the Call Path Query Language I created for Hatchet as well
+      as general software engineering work.
+    tags: ["gclab", "llnl"]
   - name: Hatchet
     logo: /images/sections/projects/hatchet_logo.png
     role: Developer and Researcher
