@@ -1,36 +1,91 @@
 section:
   name: Achievements, Honors, and Scholarships
   id: achievements
+  template: sections/accomplishments.html
   enable: true
   weight: 8
   showOnNavbar: true
 
-# For the "image" fields, / == the "assets" directory
-achievements:
-  - title: 1st Place (Undergraduate) in the ACM Student Research Competition at SC20
-    image: /images/sections/achievements/sc20_acmsrc_1st_place.jpeg
-    summary: >
-      Won 1st place in the Undergraduate category of the ACM Student Research Competition
-      at SC20 for my work on developing a query language for performance profiles for LLNL's
-      Hatchet tool
-  - title: Participant in the ACM Student Research Competition at SC23
-    image: /images/sections/achievements/sc23_acm_src.png
-    summary: >
-      Presented my work on the DYnamic and Asynchronous Data Streamliner (DYAD) at the
-      ACM Student Research Competition at SC23
-  - title: NSF Travel Scholarship
-    image: /images/sections/achievements/escience2022_ql_presentation.jpg
-    summary: >
-      Awarded a travel scholarship by NSF to attend the 2022 eScience Conference
-      and present my paper on developing a query language for performance profiles
-      for LLNL's Hatchet tool
-  - title: ACM Travel Grant
-    image: /images/sections/achievements/sc23_logo.png
-    summary: >
-      Awarded a travel grant by ACM to attend SC23 and participate in the ACM
-      Student Research Competition
-  - title: Tennessee Fellowship for Graduate Excellence
-    image: /images/sections/achievements/sc22_lab_photo_used_for_fellowship.jpg
-    summary: >
+accomplishments:
+  - name: ACM Student Research Competition Participant
+    timeline: "November 2024"
+    organization:
+      name: >
+        2024 ACM/IEEE International Conference for High
+        Performance Computing, Networking, Storage, and Analysis (SC)
+      url: https://sc24.supercomputing.org/
+    courseOverview: >
+      Participated in the Graduate Student track of the ACM Student
+      Research Competition, presenting my poster "Benchmarking and
+      Modeling of Producer-Consumer Data Movement Performance in Scientific Workflows"
+  - name: ACM Travel Grant
+    timeline: "November 2024"
+    organization:
+      name: >
+        Association of Computing Machinery
+      url: https://acm.org/
+    courseOverview: >
+      Recieved a travel grant from ACM to participate in the
+      Graduate Student track of the ACM Student Research Competition
+      at SC24
+  - name: PhD Forum Participant
+    timeline: "May 2024"
+    organization:
+      name: >
+        2024 IEEE International Parallel & Distributed Processing Symposium
+      url: https://www.ipdps.org/ipdps2024/
+    courseOverview: >
+      Participated in the PhD Forum at IPDPS 2024 and presented my poster
+      "Empirical Study of Molecular Dynamics Workflow Data Movement:
+      DYAD vs. Traditional I/O Systems"
+  - name: ACM Student Research Competition Participant
+    timeline: "November 2023"
+    organization:
+      name: >
+        2023 ACM/IEEE International Conference for High
+        Performance Computing, Networking, Storage, and Analysis (SC)
+      url: https://sc23.supercomputing.org/
+    courseOverview: >
+      Participated in the Graduate Student track of the ACM Student
+      Research Competition, presenting my poster "Enabling Transparent,
+      High-Throughput Data Movement for Scientific Workflows on HPC Systems"
+  - name: ACM Travel Grant
+    timeline: "November 2023"
+    organization:
+      name: >
+        Association of Computing Machinery
+      url: https://acm.org/
+    courseOverview: >
+      Recieved a travel grant from ACM to participate in the
+      Graduate Student track of the ACM Student Research Competition
+      at SC23
+  - name: NSF Travel Scholarship
+    timeline: October 2022
+    organization:
+      name: >
+        National Science Foundation
+      url: https://www.nsf.gov/
+    courseOverview: >
+      Received a travel scholarship from NSF to attend the 2022 eScience Conference
+      and present my paper "Enabling Call Path Querying in Hatchet to Identify
+      Performance Bottlenecks in Scientific Applications"
+  - name: "ACM Student Research Competition: 1st Place (Undergraduate)"
+    timeline: "November 2020"
+    organization:
+      name: >
+        2020 ACM/IEEE International Conference for High
+        Performance Computing, Networking, Storage, and Analysis (SC)
+      url: https://sc20.supercomputing.org/
+    courseOverview: >
+      Won first place in the Undergraduate Student track of the ACM Student
+      Research Competition, presenting my poster "Enabling Graph-Based
+      Profiling Analysis Using Hatchet"
+  - name: Tennessee Fellowship for Graduate Excellence
+    timeline: "August 2020 - Present"
+    organization:
+      name: >
+        University of Tennessee, Knoxville
+      url: https://www.utk.edu/
+    courseOverview: >
       Awarded the Tennessee Fellowship for Graduate Excellence at
       the University of Tennessee, Knoxville
