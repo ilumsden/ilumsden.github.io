@@ -1,6 +1,7 @@
 section:
-  name: Publications
-  id: publications
+  name: Papers
+  id: papers
+  template: sections/publications.html
   enable: true
   weight: 6
   showOnNavbar: true
@@ -14,12 +15,141 @@ buttons:
     filter: "workflows"
   - name: Performance Analysis
     filter: "perf_analysis"
+  - name: Artificial Intelligence
+    filter: "ai"
   - name: Physics
     filter: "physics"
   - name: Math
     filter: "math"
 
 publications:
+  - title: "RAJA Performance Suite: Performance Portability Analysis with Caliper and Thicket"
+    publishedIn:
+      name: 2024 International Workshop on Performance, Portability & Productivity in HPC at SC'24
+      date: 18 November 2024
+      url: https://p3hpc.org/
+    authors:
+      - name: Olga Pearce
+        url: https://www.linkedin.com/in/olgapearce/
+      - name: Jason Burmark
+      - name: Rich Hornung
+        url: https://people.llnl.gov/hornung1
+      - name: Befikir Bogale
+        url: https://www.linkedin.com/in/befikir/
+      - name: Ian Lumsden
+        url: https://ilumsden.github.io/
+      - name: Michael McKinsey
+        url: https://www.linkedin.com/in/michaelmckinsey2000/
+      - name: Dewi Yokelson
+        url: https://www.linkedin.com/in/dewi-yokelson/
+      - name: David Boehme
+        url: https://people.llnl.gov/boehme3
+      - name: Stephanie Brink
+        url: https://www.linkedin.com/in/stephanielbrink/
+      - name: Michela Taufer
+        url: https://globalcomputing.group/about.html
+      - name: Tom Scogland
+        url: https://www.linkedin.com/in/tom-scogland-846b33b/
+    paper:
+      summary: >
+        Maintaining performant code in a world of fast-evolving computer architectures and
+        programming models poses a significant challenge to scientists. Typically, benchmark
+        codes are used to model some aspects of a large application code's performance, and
+        are easier to build and run. Such benchmarks can help assess the effects of code or
+        algorithm changes, system updates, and new hardware. However, most performance benchmarks
+        are not written using a wide range of GPU programming models. The RAJA Performance Suite
+        provides a comprehensive set of computational kernels implemented in a variety of programming
+        models. We integrated the performance measurement and analysis tools Caliper and Thicket
+        into the RAJAPerf to facilitate performance comparison across kernel implementations and
+        architectures. This paper describes the RAJAPerf, performance metrics that can be collected,
+        and experimental analysis with case studies.
+      url: https://conferences.computer.org/sc-wpub/pdfs/SC-W2024-6oZmigAQfgJ1GhPL0yE3pS/555400b206/555400b206.pdf
+    categories: ["perf_analysis"]
+    tags: ["Performance Analysis"]
+  - title: "DYAD: Locality-aware Data Management for accelerating Deep Learning Training"
+    publishedIn:
+      name: 36th International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD)
+      date: 13-15 November 2024
+      url: https://sites.google.com/ime.usp.br/sbac2024
+    authors:
+      - name: Hariharan Devarajan
+        url: https://www.linkedin.com/in/dhariharan/
+      - name: Ian Lumsden
+        url: https://ilumsden.github.io/
+      - name: Chen Wang
+        url: https://www.linkedin.com/in/chenw5/
+      - name: Konstantia Georgouli
+        url: https://people.llnl.gov/georgouli1
+      - name: Tom Scogland
+        url: https://www.linkedin.com/in/tom-scogland-846b33b/
+      - name: Jae-Seung Yeom
+        url: https://people.llnl.gov/yeom2
+      - name: Michela Taufer
+        url: https://globalcomputing.group/about.html
+    paper:
+      summary: >
+        Deep Learning (DL) is increasingly applied across various fields to solve complex scientific
+        challenges in modern high-performance computing (HPC) systems that are beyond the reach of
+        traditional algorithms. Training DL models for scientific applications involves processing
+        multi-terabyte datasets in each epoch. The data access behavior during DL training exposes
+        optimization opportunities to cache these datasets in near-compute storage accelerators
+        in HPC systems, enhancing I/O throughput. However, current middleware solutions employ
+        near-compute storage accelerators primarily as exclusive caches, which limits the
+        effectiveness of cache access locality. To address this problem, we introduce DYAD,
+        a system designed to maximize sample locality in the cache, thereby significantly increasing
+        I/O throughput in HPC systems.DYAD optimizes I/O for DL training based on three key features.
+        First, DYAD boosts inter-node access speeds by using a novel streaming RPC with RDMA protocol,
+        achieving a 1.25x performance gain over state-of-the-art solutions. Second, DYAD further enhances
+        inter-node access by coordinating data movement, which mitigates network congestion and increases
+        throughput for inter-node accesses by up to 8.78x. Last, DYAD uses smart metadata caching that
+        outperforms traditional global metadata access methods by several orders of magnitude in terms
+        of lookup throughput. We demonstrate how DYAD accelerates large-scale DL training on a high-end
+        HPC cluster with 512 GPUs by up to 10.82x faster epochs compared to UnifyFS by performing
+        locality-aware caching on near-compute storage accelerators.
+      url: https://doi.org/10.1109/SBAC-PAD63648.2024.00010
+    categories: ["io", "ai"]
+    tags: ["I/O", "Artificial Intelligence"]
+  - title: "Empirical Study of Molecular Dynamics Workflow Data Movement: DYAD vs. Traditional I/O Systems"
+    publishedIn:
+      name: 2024 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)
+      date: 27-31 May 2024
+      url: https://ipdps.org/ipdps2024/
+    authors:
+      - name: Ian Lumsden
+        url: https://ilumsden.github.io/
+      - name: Hariharan Devarajan
+        url: https://www.linkedin.com/in/dhariharan/
+      - name: Jack Marquez
+        url: https://www.eecs.utk.edu/people/jack-marquez/
+      - name: Stephanie Brink
+        url: https://www.linkedin.com/in/stephanielbrink/
+      - name: David Boehme
+        url: https://people.llnl.gov/boehme3
+      - name: Olga Pearce
+        url: https://www.linkedin.com/in/olgapearce/
+      - name: Jae-Seung Yeom
+        url: https://people.llnl.gov/yeom2
+      - name: Michela Taufer
+        url: https://globalcomputing.group/about.html
+    paper:
+      summary: >
+        This experimental work examines data movement in molecular dynamics (MD) workflows,
+        comparing the Dynamic and Asynchronous Data Streamliner (DYAD) middleware with traditional,
+        industry-standard I/O systems such as XFS and Lustre. DYAD moves MD simulation frames to
+        analytics processes, providing enhanced flexibility and efficiency for dynamic data transfers
+        and in situ analytics. At the same time, traditional I/O storage systems provide durability
+        and scalability for high-performance computing (HPC) systems. The study integrates MD workflows
+        with common simulation codes, facilitating immediate capture and transfer of MD frames to a
+        staging area. It explores various molecular models, from simple to complex, assessing data
+        management performance and scalability. Different producer-consumer pairs, molecular models,
+        and data transaction frequency enable testing across small to large-scale HPC scenarios,
+        from single-node configurations to large, distributed environments. The findings reveal that
+        adaptive mechanisms for minimizing synchronization, direct network communication between producer
+        and consumer processes, and optimizations of both data movement and synchronization are crucial
+        for performance and scalability in MD workflows.
+      url: https://doi.org/10.1109/IPDPSW63119.2024.00111
+    categories: ["io", "perf_analysis"]
+    tags: ["I/O", "Performance Analysis"]
   - title: "Thicket: Seeing the Performance Experiment Forest for the Individual Run Trees"
     publishedIn:
       name: 32nd International Symposium on High-Performance Parallel and Distributed Computing
